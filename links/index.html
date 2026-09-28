@@ -49,7 +49,7 @@ body{margin:0;min-height:100vh;word-break:keep-all;background-color:var(--bg);co
 @media (hover:hover){.card:hover{transform:translateY(-2px)}}
 .pic{aspect-ratio:1;border-radius:12px;overflow:hidden;background:var(--bg2);display:grid;place-items:center}
 .pic img{width:100%;height:100%;object-fit:cover;display:block}
-.ph{font-family:var(--display);font-size:44px;color:var(--k)}
+.card.nopic{grid-template-columns:minmax(0,1fr);padding-left:22px}
 .meta{display:flex;gap:6px;flex-wrap:wrap}
 .kind,.peak{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:99px}
 .kind{color:var(--k);background:color-mix(in srgb,var(--k) 12%,transparent)}
@@ -77,9 +77,19 @@ footer a{color:inherit}
   <nav class="bar"><div class="tabs"><a href="#m2026-09">9월</a></div>
     <label class="search"><input id="q" type="search" placeholder="품종 검색" aria-label="품종 검색"></label></nav>
   <section class="month" id="m2026-09">
-      <header class="mhead"><span class="mnum">9</span><div><div class="mlabel">월 제철</div><div class="myear">2026 · 1개 품종</div></div></header>
-      <div class="grid"><article class="card fruit" id="추희" data-q="추희 자두 과일 추희 자두">
-      <div class="pic"><span class="ph">추</span></div>
+      <header class="mhead"><span class="mnum">9</span><div><div class="mlabel">월 제철</div><div class="myear">2026 · 2개 품종</div></div></header>
+      <div class="grid"><article class="card fish" id="전어" data-q="전어 전어 수산물 전어">
+      <div class="pic"><img src="img/f5219823.jpg" alt="전어" loading="lazy"></div>
+      <div class="body">
+        <div class="meta"><span class="kind">수산물</span><span class="peak">지금 절정</span></div>
+        <h3>전어</h3>
+        
+        <div class="buys"><a class="buy" href="https://link.coupang.com/a/hputj4fdim" target="_blank" rel="nofollow sponsored noopener">
+          <span class="pn">전어</span>
+          <span class="pr"></span><span class="go">쿠팡에서 보기 →</span></a></div>
+      </div>
+    </article><article class="card fruit nopic" id="추희" data-q="추희 자두 과일 추희 자두">
+      
       <div class="body">
         <div class="meta"><span class="kind">과일</span></div>
         <h3>추희 <small>자두</small></h3>
