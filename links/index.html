@@ -8,11 +8,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fbf4ea;--bg2:#f4e7d6;--card:#fffdf9;--ink:#24170e;--ink2:#6b5a4a;--line:#ead9c4;
-  --accent:#d9531e;--accent2:#b8400f;--fruit:#c2410c;--fish:#1e5b96;--veg:#3f7a3a;--peak:#e8a317;
+  --accent:#d9531e;--accent2:#b8400f;--fruit:#c2410c;--fish:#1e5b96;--veg:#3f7a3a;--peak:#e8a317;--grain:#a86b00;
   --shadow:0 1px 0 rgba(36,23,14,.04),0 8px 24px -12px rgba(120,60,20,.25);
   --display:"Black Han Sans","Apple SD Gothic Neo",sans-serif;--sans:"IBM Plex Sans KR","Apple SD Gothic Neo",system-ui,sans-serif}
 @media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#17120d;--bg2:#211910;--card:#221a13;--ink:#f5ebe0;--ink2:#c2b1a0;
-  --line:#3a2d20;--accent:#ff7a3d;--accent2:#ff9a66;--fruit:#ff8a4d;--fish:#7fb4ec;--veg:#8fcf86;--peak:#ffc34d;
+  --line:#3a2d20;--accent:#ff7a3d;--accent2:#ff9a66;--fruit:#ff8a4d;--fish:#7fb4ec;--veg:#8fcf86;--peak:#ffc34d;--grain:#e3b04b;
   --shadow:0 8px 24px -12px rgba(0,0,0,.6)}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--bg)}
@@ -46,7 +46,7 @@ body{margin:0;min-height:100vh;word-break:keep-all;background-color:var(--bg);co
 .card{display:grid;grid-template-columns:112px minmax(0,1fr);gap:14px;background:var(--card);border:1px solid var(--line);
   border-radius:18px;padding:12px;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform .15s}
 .card::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--k)}
-.card.fruit{--k:var(--fruit)}.card.fish{--k:var(--fish)}.card.veg{--k:var(--veg)}
+.card.grain{--k:var(--grain)}.card.fruit{--k:var(--fruit)}.card.fish{--k:var(--fish)}.card.veg{--k:var(--veg)}
 @media (hover:hover){.card:hover{transform:translateY(-2px)}}
 .pic{align-self:start;aspect-ratio:1;border-radius:12px;overflow:hidden;background:var(--bg2);display:grid;place-items:center}
 .pic img{width:100%;height:100%;object-fit:cover;display:block}
