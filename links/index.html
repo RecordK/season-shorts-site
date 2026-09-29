@@ -26,6 +26,9 @@ body{margin:0;min-height:100vh;word-break:keep-all;background-color:var(--bg);co
 .dash{color:var(--accent);font-weight:700;text-decoration:none}
 .hero p{margin:6px 0 0;color:var(--ink2);font-size:14.5px;text-wrap:balance}
 .hero>div{min-width:0}
+.chan{display:flex;gap:8px;margin:12px 0 0;flex-wrap:wrap}
+.chan a{text-decoration:none;font-size:13.5px;font-weight:700;padding:6px 12px;border-radius:99px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.chan a.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .disc{margin:14px 0 4px;font-size:12.5px;color:var(--ink2);background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:8px 12px}
 .bar{position:sticky;top:0;z-index:5;margin:12px -16px 0;padding:10px 16px;background:color-mix(in srgb,var(--bg) 88%,transparent);
   backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center}
@@ -75,6 +78,7 @@ footer a{color:inherit}
 <body><div class="wrap">
   <div class="hero"><img src="logo.png" alt="오늘의 제철 음식! 로고">
     <div><h1>오늘의 <em>제철</em> 음식!</h1><p>지금 안 먹으면 1년 기다려야 하는 것들 · 품종별 구매 링크 · <a class="dash" href="../dashboard/">제철 대시보드 →</a></p></div></div>
+  <nav class="chan" aria-label="채널 링크 모음"><a class="on" href="./">오늘의 제철 음식!</a><a href="https://recordk.github.io/dongap-site/links/">돈값상회 →</a></nav>
   <p class="disc">이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 영상 제작 시점 기준이며 바뀔 수 있어요.</p>
   <nav class="bar"><div class="tabs"><a href="#m2026-09">9월</a></div>
     <label class="search"><input id="q" type="search" placeholder="품종 검색" aria-label="품종 검색"></label></nav>
